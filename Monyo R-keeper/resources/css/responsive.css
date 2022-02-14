@@ -1,0 +1,26 @@
+@media (min-width: 769px) {
+    .calc-add {
+        max-width: 680px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .calc-add {
+        max-width: 980px;
+        margin: 1.75rem auto;
+    }
+    .mobile-nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-body .calculator {
+        padding: 10px !important;
+        -webkit-box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+        box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+        border-radius: 15px;
+        width: 100%;
+    }
+}

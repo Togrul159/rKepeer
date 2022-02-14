@@ -1,0 +1,2083 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./resources/css/responsive.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+    <title>Monyo R-Keeper</title>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="tableEdit" id="tableEdit">
+        <nav>
+            <div class="nav-item w-100">
+                <div class="extram" id="nav-tab" style="width: 40%;">
+                    <div class="bt-ship">
+                        <div class="shipping-radio ">
+                            <button class="left-blue-nav" type="button" data-open="content1">
+                            <input type="radio" id="a25" name="shipping" checked />
+                            <label for="a25">Birinci mərtəbə</label>
+                        </button>
+                        </div>
+                        <div class="shipping-radio">
+                            <button class="left-blue-nav" type="button" data-open="content2">
+                            <input type="radio" id="a50" name="shipping" />
+                            <label for="a50">İkinci zal</label>
+                        </button>
+                        </div>
+                        <div class="shipping-radio">
+                            <button class="left-blue-nav" type="button" data-open="content3">
+                            <input type="radio" id="a51" name="shipping" />
+                            <label for="a51">Terras</label>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-col" style="width: 100%;">
+                    <div class="info-nav">
+                        <div class="bt-in">
+                            <button class="order-btn"><i class="fal fa-plus"></i> Yeni Sifariş</button>
+                            <button class="scan-btn"><i class="fad fa-qrcode"></i> Skan et</button>
+                        </div>
+                        <div class="i-n-b">
+                            <button class="check do-btn" type="button" data-open="check-p"><span>Çeklər 5</span> <i class="far fa-list-alt"></i></button>
+                            <button><i class="fas fa-user"></i> Sabir</button>
+                            <button id="full"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Mobile Navbar Start -->
+    <div class="extram" id="mobileExtra1">
+        <div class="mobile-nav">
+            <nav class="mb-nav">
+                <button class="left-blue-nav" type="button" data-open="content1">
+                    <a class="nav-item" href="#">
+                        <i class="fal fa-door-open"></i><span>Birinci zall</span>
+                    </a>
+                </button>
+                <button class="left-blue-nav" type="button" data-open="content2">
+                    <a class="nav-item" href="#">
+                        <i class="fal fa-door-open"></i><span>Ikinci zall</span>
+                    </a>
+                </button>
+                <button class="left-blue-nav" type="button" data-open="content3">
+                    <a class="nav-item" href="#">
+                        <i class="fal fa-door-open"></i><span>Terras</span>
+                    </a>
+                </button>
+            </nav>
+        </div>
+    </div>
+    <!-- Mobile Navbar End -->
+
+    <!-- Mobile Navbar Start -->
+    <div class="extram mobileExtra2" id="mobileExtra2" style="display: none;">
+        <div class="mobile-nav">
+            <nav class="mb-nav">
+                <button type="button" class="do-btn" data-open="tables">
+                    <a class="nav-item" href="#">
+                        <i class="fas fa-home"></i></i><span>Birinci zall</span>
+                    </a>
+                </button>
+                <button class="do-btn" type="button" data-open="basket-m-box">
+                    <a class="nav-item" href="#">
+                        <i class="far fa-list-alt"></i></i><span>Çek</span>
+                    </a>
+                </button>
+                <button class="left-blue-nav" type="button" data-open="content3">
+                    <a class="nav-item" href="#">
+                        <i class="fas fa-th"></i><span>Menu</span>
+                    </a>
+                </button>
+                <button class="left-blue-nav" type="button" data-open="content3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fal fa-ellipsis-v-alt"></i>
+                        </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><button type="button" class="services-b" data-open="services-total"> <i class="fas fa-concierge-bell"></i> Xidmət Haqqını sil</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#comment"> <i class="fas fa-comment-dots"></i> Çekə Şərh Yaz</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button><i class="fas fa-eraser"></i> Çeki Təmizlə</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" class="table-edit" data-open="tableEdit"><i class="fal fa-chair"></i> Stolu Dəyiş</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#calculator"><i class="fas fa-user-plus"></i> Qonaq Sayını Dəyiş</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#check-edit"><i class="far fa-clone"></i> Çeki Birləşdir</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#silent-edit"> <i class="fal fa-exchange"></i> Satış Tipini Dəyiş</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#personal-edit"><i class="fas fa-users-cog"></i> Qarson Dəyiş</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#calculator-discount"><i class="fas fa-hand-holding-usd"></i> Endirim</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                </ul>
+        </div>
+        </button>
+        </nav>
+    </div>
+    </div>
+    <!-- Mobile Navbar End -->
+
+
+    <!-- Tables Section Start  -->
+    <div class="extram" id="tables">
+        <section id="Tables">
+            <div class="container">
+                <div class="extra" id="content1">
+                    <div class="row my-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 1</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 2</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 3</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 4</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 5</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 6</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 7</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 8</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="extra" id="content2" style="display: none;">
+                    <div class="row my-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 1</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 2</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 3</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 4</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extra" id="content3" style="display: none;">
+                    <div class="row my-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 1</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 2</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 3</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 4</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 3</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator">
+                                <div class="tables-card">
+                                    <h3>Stol 4</h3>
+                                    <span>(Sabir)</span>
+                                    <span>0 ₼</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Tables Section End  -->
+
+    <!-- Main Section Start -->
+    <div class="extram" id="main" style="display: none;">
+        <section id="Main">
+            <div class="right-menu">
+                <div class="menu-item">
+                    <div class="icon-item">
+                        <button type="button" class="do-btn" data-open="tables"><i class="fas fa-arrow-left"></i></button>
+                    </div>
+                    <div class="icon-item">
+                        <button type="button" class="services-b" data-open="services-total"> <i
+                                class="fas fa-concierge-bell"></i></button>
+                    </div>
+                    <div class="icon-item">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#comment"><i
+                                class="fas fa-comment-dots"></i></button>
+                    </div>
+
+                    <div class="icon-item-2">
+                        <button class="print-btn" style="margin: 10px 0;"><i class="fas fa-print"></i></button>
+                        <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#comment"><i
+                                class="fas fa-comment-dots"></i></button> -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fal fa-ellipsis-v-alt"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                <li><button type="button" class="services-b" data-open="services-total"> <i class="fas fa-concierge-bell"></i> Xidmət Haqqını sil</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#comment"> <i class="fas fa-comment-dots"></i> Çekə Şərh Yaz</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button><i class="fas fa-eraser"></i> Çeki Təmizlə</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" class="table-edit" data-open="tableEdit"><i class="fal fa-chair"></i> Stolu Dəyiş</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#calculator"><i class="fas fa-user-plus"></i> Qonaq Sayını Dəyiş</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#check-edit"><i class="far fa-clone"></i> Çeki Birləşdir</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#silent-edit"> <i class="fal fa-exchange"></i> Satış Tipini Dəyiş</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#personal-edit"><i class="fas fa-users-cog"></i> Qarson Dəyiş</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button type="button" data-bs-toggle="modal" data-bs-target="#calculator-discount"><i class="fas fa-hand-holding-usd"></i> Endirim</button></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-box">
+                    <div class="basket-title">
+                        <span>Stol 5</span>
+                        <span>00:14</span>
+                        <span>#3177</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#check"><i
+                                class="fal fa-chevron-down"></i></button>
+                    </div>
+                    <div class="basket-table">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-product-1">
+                            <div class="table-product">
+                                <div class="name">
+                                    <h6>Marqarita</h6>
+                                    <span>(Ölçü Kiçik)</span>
+                                </div>
+                                <div class="price">
+                                    <div class="price-info">
+                                        <span>1x</span>
+                                        <span>8.00</span>
+                                    </div>
+                                    <span>8.00</span>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-product-1">
+                            <div class="table-product">
+                                <div class="name">
+                                    <h6>Marqarita</h6>
+                                    <span>(Ölçü Kiçik)</span>
+                                </div>
+                                <div class="price">
+                                    <div class="price-info">
+                                        <span>1x</span>
+                                        <span>8.00</span>
+                                    </div>
+                                    <span>8.00</span>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-product-1">
+                            <div class="table-product">
+                                <div class="name">
+                                    <h6>Marqarita</h6>
+                                    <span>(Ölçü Kiçik)</span>
+                                </div>
+                                <div class="price">
+                                    <div class="price-info">
+                                        <span>1x</span>
+                                        <span>8.00</span>
+                                    </div>
+                                    <span>8.00</span>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-product-1">
+                            <div class="table-product">
+                                <div class="name">
+                                    <h6>Marqarita</h6>
+                                    <span>(Ölçü Kiçik)</span>
+                                </div>
+                                <div class="price">
+                                    <div class="price-info">
+                                        <span>1x</span>
+                                        <span>8.00</span>
+                                    </div>
+                                    <span>8.00</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="total-price">
+                        <div class="total-info">
+                            <div class="total-info-text">
+                                <span>Endirim</span>
+                                <h5>0.00 ₼ (0 %)</h5>
+                            </div>
+                            <div class="total-info-text-services" id="services-total" style="display: none;">
+                                <span>Servis</span>
+                                <h5>5% (0.49₼)</h5>
+                            </div>
+                            <div class="total-info-text">
+                                <span>Hesab</span>
+                                <h5>8 ₼</h5>
+                            </div>
+                        </div>
+                        <div class="price-check-btn">
+                            <button type="button" class="do-btn" data-open="payment"><i class="fal fa-check-double"></i> 8 ₼</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-menu">
+                <div class="extra-1" id="categroies-product">
+                    <div class="left-item-title">
+                        <div class="home">
+                            <button><i class="fas fa-home"></i></button>
+                        </div>
+                        <div class="search-box" style="display: flex; align-items: center;">
+                            <form role="search" method="get" class="search-form" action="">
+                                <label>
+                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                        title="Search for:" />
+                                </label>
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                            <button class="categroies-product-btn" type="button" data-open="product-list"><i
+                                    class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                    <div class="row left-card mx-1 my-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="pizza">
+                                <div class="card-food">
+                                    <img src="./resources/img/food-pizza-cheese-tomatoes-olives-1739499.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Pizzallar</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="drink">
+                                <div class="card-food">
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>içkilər</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="drink">
+                                <div class="card-food">
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>içkilər</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="drink">
+                                <div class="card-food">
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>içkilər</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="drink">
+                                <div class="card-food">
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>içkilər</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button class="categroies-product-btn" type="button" data-open="drink">
+                                <div class="card-food">
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>içkilər</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza Categorise Start -->
+                <div class="extra-1" id="pizza" style="display: none;">
+                    <div class="left-item-title">
+                        <div class="home">
+                            <button class="categroies-product-btn" type="button" data-open="categroies-product"><i
+                                    class="fas fa-home"></i></button>
+                            <button>Pizzalar</button>
+                        </div>
+                        <div class="search-box" style="display: flex; align-items: center;">
+                            <form role="search" method="get" class="search-form" action="">
+                                <label>
+                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                        title="Search for:" />
+                                </label>
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                            <button class="categroies-product-btn" type="button" data-open="product-list"><i
+                                    class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                    <div class="row left-card mx-1 my-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-add">
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/food-pizza-cheese-tomatoes-olives-1739499.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Marqarita</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-add">
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/food-pizza-cheese-tomatoes-olives-1739499.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Peperoni</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-add">
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/food-pizza-cheese-tomatoes-olives-1739499.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Marqarita</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-add">
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/food-pizza-cheese-tomatoes-olives-1739499.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Salami</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza Categorise End -->
+                <!--Icki Categories Start -->
+                <div class="extra-1" id="drink" style="display: none;">
+                    <div class="left-item-title">
+                        <div class="home">
+                            <button class="categroies-product-btn" type="button" data-open="categroies-product"><i
+                                    class="fas fa-home"></i></button>
+                            <button>Içkiler</button>
+                        </div>
+                        <div class="search-box" style="display: flex; align-items: center;">
+                            <form role="search" method="get" class="search-form" action="">
+                                <label>
+                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                        title="Search for:" />
+                                </label>
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                            <button class="categroies-product-btn" type="button" data-open="product-list"><i
+                                    class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                    <div class="row left-card mx-1 my-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button>
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Coca-Cola Zero</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button>
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Fanta</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button>
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Ayran</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button>
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Meyve Şiresi</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <button>
+                                <div class="card-food">
+                                    <div class="card-price">
+                                        <div class="depo">
+                                            <span>-4</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>8₼</span>
+                                        </div>
+                                    </div>
+                                    <img src="./resources/img/DKQNhINUQAEzmb6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-card">
+                                        <span>Meyve Şiresi</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Icki Categories end -->
+
+                <!-- Product-list Start -->
+                <div class="extra-1" id="product-list" style="display: none;">
+                    <div class="left-item-title">
+                        <div class="home">
+                            <button class="categroies-product-btn" type="button" data-open="categroies-product"><i
+                                    class="fas fa-home"></i></button>
+                        </div>
+                        <div class="search-box" style="display: flex; align-items: center;">
+                            <form role="search" method="get" class="search-form" action="">
+                                <label>
+                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                        title="Search for:" />
+                                </label>
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                            <button class="categroies-product-btn" type="button" data-open="product-list"><i
+                                    class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                    <div class="row left-card  product-list">
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button>
+                                <div class="product-list-item">
+                                    <div class="n-left">
+                                        <span>Marqarita</span>
+                                    </div>
+                                    <div class="p-right">
+                                        <span>8₼</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product-list End-->
+    </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Payment Start -->
+    <div class="extram" id="payment" style="display: none;">
+        <section id="Payment">
+            <div class="container">
+                <div class="row tt  my-5">
+                    <div class="col-xl-5 col-md-6 col-lg-5 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-2 col-md-2 m-0 p-0">
+                                <div class="menu-item">
+                                    <div class="icon-item">
+                                        <button type="button" class="do-btn" data-open="main"><i class="fas fa-arrow-left"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10">
+                                <div class="calculator-s my-4" style="height: auto;">
+                                    <input type="text" class="calc-numbersss" value="0" style="height: 70px;">
+                                    <div class="calculator-buttonsss" style="height: 90%;">
+                                        <button class="btn-cl-1">1</button>
+                                        <button class="btn-cl-1">2</button>
+                                        <button class="btn-cl-1">3</button>
+                                        <button class="btn-cl-1">4</button>
+                                        <button class="btn-cl-1">5</button>
+                                        <button class="btn-cl-1">6</button>
+                                        <button class="btn-cl-1">7</button>
+                                        <button class="btn-cl-1">8</button>
+                                        <button class="btn-cl-1">9</button>
+                                        <button class="btn-cl-1 span-3">0</button>
+                                        <button class="btn-cl-1 is-clear span-2 orange operator">C</button>
+                                        <button class="btn-cl-1  operator">&larr;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-6 col-lg-7 col-sm-12">
+                        <div class="exOne" id="exOne">
+                            <div class="row tt-p my-4">
+                                <div class="col-xl-12">
+                                    <div class="t-price" style="display: flex; justify-content: space-between; align-items: center;">
+                                        <h2>Ödənilməli</h2>
+                                        <span>0.00₼</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-text">
+                                        <input type="number" placeholder="AZN" id="youridhere" />
+                                        <label for="youridhere" class="static-value">Nağd Ödəniş</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-text">
+                                        <input type="number" placeholder="AZN" id="youridhere" />
+                                        <label for="youridhere" class="static-value">Kartla Ödəniş</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-xl-12">
+                                    <div class="exOne-r">
+                                        <li>
+                                            <label class="full-width radio-label"><input type="radio" value="2" name="A">Kartla Ödəniş</input></label>
+                                        </li>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="row tt-btn">
+                                <div class="col-xl-4">
+                                    <button>Müştəri balansı</button>
+                                </div>
+                                <div class="col-xl-4">
+                                    <button>Müştəri Bonusu</button>
+                                </div>
+                                <div class="col-xl-4">
+                                    <button>Umico</button>
+                                </div>
+                                <div class="col-xl-4">
+                                    <button>Ulduzum</button>
+                                </div>
+                            </div>
+                            <div class="row tt-btn-1">
+                                <div class="col-xl-12">
+                                    <div class="on-off">
+                                        <span>Çeki çap et</span>
+                                        <div class="buttons">
+                                            <div>
+                                                <label class="switch"><input type="checkbox"><span class="slider round"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="on-off">
+                                        <span>Vergi ilə çap et</span>
+                                        <div class="buttons">
+                                            <div>
+                                                <label class="switch"><input type="checkbox"><span class="slider round"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scan-bt">
+                                <button class="print-btnn  ex-btn" type="button" data-open="exSecond">Ödənişsiz Bağla</button>
+                                <button class="print-btn">Bağla</button>
+                            </div>
+                        </div>
+
+                        <div class="exOne" id="exSecond" style="display: none;">
+                            <div class="row tt-p my-4">
+                                <div class="col-xl-12">
+                                    <div class="t-price" style="display: flex; justify-content: space-between; align-items: center;">
+                                        <h2>Ödənişsiz Bağla</h2>
+                                        <s>0.00₼</s>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="exSecond-r">
+                                        <div class="custom_radio">
+                                            <input type="radio" id="featured-1" name="featured" checked><label for="featured-1">Qonaq Tərk Etdi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="exSecond-r">
+                                        <div class="custom_radio">
+                                            <input type="radio" id="featured-2" name="featured"><label for="featured-2">Şirkət Hesabına</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="exSecond-r">
+                                        <div class="custom_radio">
+                                            <input type="radio" id="featured-3" name="featured"><label for="featured-3">Qarson Səhvi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row tt-btn">
+                                <div class="col-xl-12">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Çekə Şərh Yazın"></textarea>
+                                </div>
+                            </div>
+                            <div class="row tt-btn-1">
+                                <div class="col-xl-12">
+                                    <div class="on-off">
+                                        <span>Çeki çap et</span>
+                                        <div class="buttons">
+                                            <div>
+                                                <label class="switch"><input type="checkbox"><span class="slider round"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="on-off">
+                                        <span>Vergi ilə çap et</span>
+                                        <div class="buttons">
+                                            <div>
+                                                <label class="switch"><input type="checkbox"><span class="slider round"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scan-bt">
+                                <button class="print-btnn  ex-btn" type="button" data-open="exOne">Ödənişə Qayıt</button>
+                                <button class="print-btn">Bağla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- Payment End -->
+
+    <!-- Сheckp- Start -->
+    <div class="extram" id="check-p" style="display: none;">
+        <section id="Check-p">
+            <div class="row  w-100 check-page">
+                <div class="col-xl-1 col-md-1 col-sm-1 col-1">
+                    <div class="menu-item">
+                        <div class="icon-item">
+                            <button type="button" class="do-btn" data-open="main"><i class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-11 col-md-11 col-sm-11 col-11">
+                    <div class="row sc-row pt-5 w-100">
+                        <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button> <button type="button" class="do-btn" data-open="main">
+                            <div class="col-xl-12">
+                                <div class="row my-2" style="display: flex;align-items: center; border-bottom: 2px dashed #8f8f8f;">
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="time-check">
+                                                <span>14:42</span>
+                                                <p>40 dəqiqə əvvəl</p>
+                                            </div>
+                                            <div class="hashtag-check">
+                                                <span>#3234</span>
+                                                <p>Sabir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="status-check">
+                                                <span>Birinci mərtəbə/stol 4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="check-item">
+                                            <div class="total-price-check">
+                                                <span>0 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Сheck-p End -->
+
+
+    <!-- Basket add Product Modal Start -->
+    <div class="modal fade" id="calculator-add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog calc-add">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Marqarita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row box-product">
+                        <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                            <div class=" row right-box">
+                                <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                    <div class="row size-div">
+                                        <div class="col-lg-12">
+                                            <div id="wrapper-radios">
+                                                <h3>Ölçü</h3>
+                                                <div class="radios">
+                                                    <input type="radio" value='1' name='radio-price' id='radio1' />
+                                                    <label for='radio1'>
+                                                    <div class="card-box-size">
+                                                        <img src="./resources/img/large.png" alt="">
+                                                        <div class="size-text">
+                                                            <span>Kiçik</span>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" value='2' name='radio-price' id='radio2' />
+                                                    <label for='radio2'>
+                                                    <div class="card-box-size">
+                                                        <img src="./resources/img/large.png" alt="">
+                                                        <div class="size-text">
+                                                            <span>Orta</span>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" value='3' name='radio-price' id='radio3' />
+                                                    <label for='radio3'>
+                                                    <div class="card-box-size">
+                                                        <img src="./resources/img/large.png" alt="">
+                                                        <div class="size-text">
+                                                            <span>Böyük</span>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                    <div class="row sub-div my-2">
+                                        <div class="col-lg-12">
+                                            <div id="wrapper-radios">
+                                                <h3>Əlave</h3>
+                                                <div class="radios">
+                                                    <input type="radio" value='4' name='radio-price-add' id='radio4' />
+                                                    <label for='radio4'>
+                                                        <div class="card-box-size">
+                                                            <img src="./resources/img/13-produktov-pitaniya-kotorye-sposobny-usilivat-golovnuyu-bol_e4da3b7fbbce2345d7772b0674a318d5.jpg" alt="">
+                                                            <div class="size-text">
+                                                                <span>Pendir</span>
+                                                                <span>1₼</span>
+    
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" value='5' name='radio-price-add' id='radio5' />
+                                                    <label for='radio5'>
+                                                        <div class="card-box-size">
+                                                            <img src="./resources/img/post_5c56dc4d68678.jpg" alt="">
+                                                            <div class="size-text">
+                                                                <span>Kolbasa</span>
+                                                                <span>1₼</span>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" value='6' name='radio-price-add' id='radio6' />
+                                                    <label for='radio6'>
+                                                        <div class="card-box-size">
+                                                            <img src="./resources/img/olivki_01.jpg" alt="">
+                                                            <div class="size-text">
+                                                                <span>Zeytun</span>
+                                                                <span>0.5₼</span>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                            <div class="left-box">
+                                <div class="calculator-s">
+                                    <input type="text" class="calc-numbers" value="0">
+                                    <div class="calculator-buttons">
+                                        <button class="btn-cl-1">1</button>
+                                        <button class="btn-cl-1">2</button>
+                                        <button class="btn-cl-1">3</button>
+                                        <button class="btn-cl-1">4</button>
+                                        <button class="btn-cl-1">5</button>
+                                        <button class="btn-cl-1">6</button>
+                                        <button class="btn-cl-1">7</button>
+                                        <button class="btn-cl-1">8</button>
+                                        <button class="btn-cl-1">9</button>
+                                        <button class="btn-cl-1 span-3">0</button>
+                                        <button class="btn-cl-1 is-clear span-2 orange operator">C</button>
+                                        <button class="btn-cl-1  operator">&larr;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row total-price-basket">
+                        <div class="col-lg-12">
+                            <div class="t-b">
+                                <span>Hesab: 8.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="do-btn" data-open="main" data-bs-dismiss="modal"><i
+                            class="fal fa-check"></i> Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Basket add Product Modal End -->
+
+    <!--Calculator Modal Start -->
+
+    <div class="modal fade" id="calculator" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Qonaq Sayı Seçmə</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="calculator">
+                        <div class="input" id="input"></div>
+                        <div class="buttons">
+                            <div class="leftPanel">
+                                <div class="col-lg-12">
+                                    <div class="numbers">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="numbers">
+                                        <div>4</div>
+                                        <div>5</div>
+                                        <div>6</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="numbers">
+                                        <div>7</div>
+                                        <div>8</div>
+                                        <div>9</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="numbers">
+                                        <div>0</div>
+                                        <div id="clear">C</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equal" id="result">=</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="do-btn mobile-ex-b " data-open="main" data-bs-dismiss="modal"><i
+                            class="fal fa-check"></i> Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Calculator Modal End -->
+
+    <!--Calculator Modal Start -->
+
+    <div class="modal fade" id="calculator-product-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Marqarita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <input type="text" class="calc-numberss" value="0">
+                    <small>Orijinal qiymət: 2.50 ₼</small>
+                    <div class="calculator-ss">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="calculator-buttonss">
+                            <button class="btn-cl-1">1</button>
+                            <button class="btn-cl-1">2</button>
+                            <button class="btn-cl-1">3</button>
+                            <button class="btn-cl-1">4</button>
+                            <button class="btn-cl-1">5</button>
+                            <button class="btn-cl-1">6</button>
+                            <button class="btn-cl-1">7</button>
+                            <button class="btn-cl-1">8</button>
+                            <button class="btn-cl-1">9</button>
+                            <button class="btn-cl-1 span-3">0</button>
+                            <button class="btn-cl-1 is-clear span-2 orange operator">C</button>
+                            <button class="btn-cl-1  operator">&larr;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="do-btn" data-open="main " data-bs-dismiss="modal"><i
+                            class="fal fa-check"></i> Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Calculator Modal End -->
+
+    <!--Calculator-dicount Modal Start -->
+
+    <div class="modal fade" id="calculator-discount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Endirim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="calc-discount" value="0">
+                    <div class="calculator-discount">
+                        <div class=" my-1" style="display: flex; justify-content: center;">
+                            <input id="checkbox" type="checkbox" class="checkbox" />
+                            <label for="checkbox" class="switch">
+                              <span class="switch__circle">
+                                <span class="switch__circle-inner"></span>
+                              </span>
+                              <span class="switch__left">AZN</span>
+                              <span class="switch__right">%</span>
+                            </label>
+                        </div>
+                        <div class="calculator-buttons-discount">
+                            <button class="btn-cl-1">1</button>
+                            <button class="btn-cl-1">2</button>
+                            <button class="btn-cl-1">3</button>
+                            <button class="btn-cl-1">4</button>
+                            <button class="btn-cl-1">5</button>
+                            <button class="btn-cl-1">6</button>
+                            <button class="btn-cl-1">7</button>
+                            <button class="btn-cl-1">8</button>
+                            <button class="btn-cl-1">9</button>
+                            <button class="btn-cl-1 span-3">0</button>
+                            <button class="btn-cl-1 is-clear span-2 orange operator">C</button>
+                            <button class="btn-cl-1  operator">&larr;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="do-btn" data-open="main" data-bs-dismiss="modal"><i
+                            class="fal fa-check"></i> Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Calculator-discount Modal End -->
+
+
+    <!-- Comment Modal Start -->
+
+    <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Çekə Şərh Yaz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+                    <button type="button" class="btn btn-success">Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Modal Start -->
+
+    <!-- Check Modal Start -->
+
+    <div class="modal fade" id="check" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Açıq Çeklər</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-check">
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                            qəbzin) 10.29₼</button>
+                    </div>
+                    <div class="list-check">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#calculator" data-bs-dismiss="modal">Yeni çek
+                            yarat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Check Modal Start -->
+
+    <!-- Check-edit Modal Start -->
+
+    <div class="modal fade" id="check-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Açıq Çeklər</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-check">
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                    qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                        qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                            qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                                qəbzin) 10.29₼</button>
+                        <button type="button" data-bs-dismiss="modal">Çek #3178 (Birinci mərtəbə / Stol 8) (Sənin
+                                                    qəbzin) 10.29₼</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Check-edit Modal Start -->
+
+
+    <!-- silent modal start -->
+    <div class="modal fade" id="silent-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Satış Tipi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-check">
+                        <button type="button" data-bs-dismiss="modal">Çatdırılma</button>
+                        <button type="button" data-bs-dismiss="modal">Yerində</button>
+                        <button type="button" data-bs-dismiss="modal">Wolt</button>
+                        <button type="button" data-bs-dismiss="modal">189 Delivery</button>
+                        <button type="button" data-bs-dismiss="modal">Voop</button>
+                        <button type="button" data-bs-dismiss="modal">Fonibo</button>
+                        <button type="button" data-bs-dismiss="modal">Bolt Food</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- silent modal start -->
+
+    <!-- personal modal start -->
+    <div class="modal fade" id="personal-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Qarson siyahısı</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-check">
+                        <button type="button" data-bs-dismiss="modal">Kassir</button>
+                        <button type="button" data-bs-dismiss="modal">Garson</button>
+                        <button type="button" data-bs-dismiss="modal">Manager</button>
+                        <button type="button" data-bs-dismiss="modal">Sabir</button>
+                        <button type="button" data-bs-dismiss="modal">Teymur</button>
+                        <button type="button" data-bs-dismiss="modal">Teymur</button>
+                        <button type="button" data-bs-dismiss="modal">Teymur</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- personal modal start -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./resources/js/app.js"></script>
+</body>
+
+</html>
